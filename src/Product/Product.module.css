@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* start of product  */
+.products {
+  display: grid;
+  padding: 0px 10px;
+  grid-template-columns: auto auto auto;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.products img {
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+/* end of product */
+
+/* start of card  */
+.card {
+  font-size: 15px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  height: 250px;
+  width: 200px;
+  margin: 5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.price {
+  padding: 8px 10px;
+}
+
+.price span {
+  position: relative;
+  top: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2px;
+}
+
+.off {
+  padding: 8px 10px;
+  color: darkolivegreen;
+  font-weight: 600;
+}
+
+.off span {
+  text-decoration: line-through;
+  color: black;
+  font-size: 12px;
+}
+
+.add {
+  background-color: #6699ff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.add:hover {
+  cursor: pointer;
+}
+/* end of card */
+
+.topHome {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 0px 8px;
+}
+
+.topHome p {
+  padding: 5px;
+  background-color: #6699ff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.topHome h1 {
+  color: deeppink;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Bungee", cursive;
+}
+
+/* start of scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6699ff;
+  border-radius: 10px;
+}
+/* end of  scrollbar */
+
+@media screen and (max-width: 674px) {
+  .products {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .card {
+    width: 170px;
+  }
+
+  .card img {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .topHome h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card {
+    width: 120px;
+  }
+
+  .card img {
+    width: 120px;
+  }
+}
